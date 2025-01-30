@@ -1,9 +1,14 @@
 import "./App.css";
+import { Button } from "./components/common/Button";
+import { SectionTitle } from "./components/common/SectionTitle";
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1 class="text-3xl font-bold underline font-grotesk  bg-linear-(--gradient-linear-primary)">Hello world!</h1>
+      <h1 class=" text-3xl font-bold underline font-grotesk ">Hello world!</h1>
+      <Button>Primary</Button>
+      <Button className="bg-white text-secondary">Secondary</Button>
+      <SectionTitle gradient='buddy'>Go ahead </SectionTitle>
     </>
   );
 }
