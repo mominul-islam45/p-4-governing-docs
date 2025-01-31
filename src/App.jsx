@@ -1,14 +1,14 @@
 import "./App.css";
-import { Button } from "./components/common/Button";
-import { SectionTitle } from "./components/common/SectionTitle";
+import { Footer } from "./components/shared/Footer";
+import { Navbar } from "./components/shared/Navbar";
 
 const App = () => {
   return (
     <>
-      <h1 class=" text-3xl font-bold underline font-grotesk ">Hello world!</h1>
-      <Button>Primary</Button>
-      <Button className="bg-white text-secondary">Secondary</Button>
-      <SectionTitle gradient='buddy'>Go ahead </SectionTitle>
+      <div className="bg-sky-200">
+      <Navbar/>
+      <Footer/>
+      </div>
     </>
   );
 }
